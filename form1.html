@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        input{
+            width: 300px;
+        }
+        span{
+            color: gray;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table align="center">
+        <tr >
+            <td>
+                <h3>Personal Information</h3>
+
+            </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="firstName">First Name: </label></td>
+          <td><input type="text" id="firstName" pattern="[a-zA-Z]{2,}" required /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="lastName">Last Name: </label></td>
+          <td><input type="text" id="lastName" pattern="[a-zA-Z]{2,}" required/></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="bob">Date Of Birth:</label></td>
+          <td>
+            <select name="" id="" style="width: 90px;">
+                <option value="">Month</option>
+            </select>
+            <select name="" id="" style="width: 90px;">
+                <option value="">Day</option>
+            </select>
+            <select name="" id="" style="width: 99px;">
+                <option value="">
+                    Year
+                </option>
+            </select>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="aqua" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+              </svg>
+        
+        
+        </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="gender"> Gender:</label></td>
+          <td>
+            <select name="" id="gender" required style="width: 289px;">
+              <option value="" value="" selected disabled>Choose Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="aqua" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+              </svg>
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+
+                <h3>Account Information</h3>
+            </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><label for="email" >Email:</label></td>
+          <td><input type="email" id="email" required/> <br>
+          </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <span>(Your email address will be your usename)</span>
+
+            </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="reEmail">Re-type Email:</label></td>
+          <td><input type="email" id="reEmail" required/></td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><label for="password">Password:</label></td>
+          <td><input type="text" id="password" required/>
+                
+        </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>(Min 8 charecter,1 number ,case-sensitive)</span></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="rePassword">Re-type Password:</label></td>
+          <td><input type="text" id="rePassword" required/></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="SecQue">Security Question:</label></td>
+          <td>
+            <select name="SecQue" id="SecQue" required style="width: 289px;">
+              <option value="" selected disabled style="width: 309px;">
+                Choose a security question
+              </option>
+            </select>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="aqua" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+              </svg>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top"><label for="SecAns">Security Answer:</label></td>
+          <td><input type="text" id="SecAns" required/><br>
+            
+        </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>(Not case-sensitive)</span></td>
+        </tr>
+        <tr>
+            <td colspan="3"><h3>Contact Information</h3></td>
+        </tr>
+        
+        <tr>
+          <td align="right"><label for="address">Address:</label></td>
+          <td colspan="2"><input id="address" type="text" required/></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="city">City:</label></td>
+          <td colspan="2"><input id="city" type="text" required/></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="state">State:</label></td>
+          <td colspan="2">
+            <select name="" id="state" required style="width: 309px;">
+              <option value="" selected disabled>Choose a State</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" ><label for="zipcode">Zip Code:</label></td>
+          <td colspan="2"><input id="zipcode" type="text" required/></td>
+        </tr>
+
+        <tr>
+          <td align="right" valign="top"><label for="Phone">Phone:</label></td>
+          <td><input type="tel" id="Phone"  required  style="width: 213px;"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="aqua" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+          </svg>
+            <select name="" id="mobile"  required >
+                <option value="" selected disabled>Mobile</option>
+              </select>
+        </td>
+          
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>(No spaces or dashes)</span></td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center">
+            <input type="submit" style="width: 100px;" value="Submit" name="" id="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
