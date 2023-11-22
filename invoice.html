@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Maintable{
+            border-spacing: 0;
+        }
+        .cellColor{
+            background-color: rgba(190, 184, 184, 0.788);
+        }
+        .blackRowL{
+            border-left: 1px solid black;
+            
+        }
+        .blackRowR{
+            border-right: 1px solid black;
+            
+        }
+        .blackRowT{
+            border-top: 1px solid black;
+            
+        }
+        .blackRowB{
+            border-bottom: 1px solid black;
+            
+        }
+        
+        .greyRow{
+            border-left:1px solid grey ;
+        }
+        .greyRowT{
+            border-top:1px solid grey ;
+        }
+        .greyRowR{
+            border-right:1px solid grey ;
+        }
+        .greyRowB{
+            border-bottom:1px solid grey ;
+        }
+        td{
+            padding:10px ;
+        }
+        td  table  tr  td{
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="Maintable" align="center" >
+        <tr >
+            <td class=" blackRowB blackRowL blackRowR blackRowT cellColor" colspan="3">Invoice#123456789</td>
+            <td class="blackRowB blackRowR blackRowT cellColor"> 14 january 2025</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="greyRow greyRowB " style="border-right:1px solid grey;">
+                <table>
+                    <tr>
+                        <td style="font-weight:bold;">
+                            Pay to:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Acme Billing Co.
+                        </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            123 Main St.
+                        </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            Cityville.NA 12345
+                        </td></tr>
+                </table>
+            </td>
+             
+                
+            <td colspan="2" class="greyRowB  greyRowR">
+                <table>
+                    <tr>
+                        <td style="font-weight:bold;">
+                            Customer:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            John Smith
+                        </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            321 Willow Way
+                        </td>
+                        </tr>
+                    <tr>
+                        <td>
+                            Southeast Northwestshire, MA 54321
+                        </td></tr>
+                </table>
+
+
+
+
+            </td>
+        </tr>
+        <tr>
+            <td class="greyRowB blackRowR greyRow cellColor" style="width: 25%;">Name/Description</td>
+            <td class="greyRowB greyRowR cellColor" style="width: 25%;">Qty.</td>
+            <td class="greyRowB blackRowR cellColor" style="width: 25%;">@</td>
+            <td class="greyRowB blackRowR cellColor" style="width: 25%;">Cost</td>
+        </tr>
+        <tr>
+            <td class="greyRowB greyRow blackRowR "> Paper clips</td>
+            <td class="greyRowB greyRowR ">1000</td>
+            <td class="greyRowB blackRowR ">0.01</td>
+            <td class="greyRowB blackRowR ">10.00</td>
+        </tr>
+        <tr>
+            <td class="blackRowR greyRow ">Staples(box)</td>
+            <td class="greyRowR " >100</td>
+            <td class="blackRowR ">1.00</td>
+            <td class="blackRowR  ">100.00</td>
+        </tr>
+        <tr>
+            <td class="blackRowR blackRowL blackRowT cellColor" colspan="3">Subtotal</td>
+            <td class="blackRowR blackRowT ">110.00</td>
+        </tr>
+        <tr>
+            <td class="blackRowL blackRowT blackRowB cellColor" colspan="2">Tax</td>
+            <td class="greyRow blackRowR blackRowB blackRowT " >8%</td>
+            <td class="blackRowR blackRowB blackRowT ">8.80</td>
+        </tr>
+        <tr>
+            <td class="blackRowL blackRowB blackRowR cellColor" colspan="3">Grand Total</td>
+            <td class="blackRowB blackRowR ">$ 118.80</td>
+        </tr>
+    </table>
+</body>
+</html>
